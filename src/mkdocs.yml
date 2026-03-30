@@ -1,0 +1,58 @@
+site_name: Просвещённый абсолютизм Екатерины II
+site_description: Учебный проект по истории России XVIII века
+site_author: Студент
+
+docs_dir: docs
+site_dir: docs
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+
+    - scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+
+nav:
+  - Главная: index.md
+  - Введение: introduction.md
+
+  - Эпоха дворцовых переворотов:
+      - Обзор: coups/index.md
+      - Ключевые проблемы системы: coups/problems.md
+
+  - Просвещённый абсолютизм:
+      - Общее: enlightenment/index.md
+      - Европейское влияние: enlightenment/european.md
+      - Особенности в России: enlightenment/russia.md
+
+  - Политика Екатерины II:
+      - Общее: catherine/index.md
+      - Реформы: catherine/reforms.md
+      - Реализация идей: catherine/implementation.md
+      - Противоречия: catherine/contradictions.md
+      - Роль личности: catherine/personality.md
+      - Перелом 1789 г.: catherine/turning_1789.md
+
+  - Аналитика:
+      - Общее: analysis/index.md
+      - Связь реформ и переворотов: analysis/connection.md
+      - Причинно-следственная модель: analysis/model.md
+
+  - Заключение: conclusion.md
+  - Источники: sources.md
