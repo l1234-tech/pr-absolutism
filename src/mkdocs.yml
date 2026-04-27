@@ -1,5 +1,5 @@
 site_name: Просвещённый абсолютизм Екатерины II
-site_description: Инд. проект по истории
+site_description: Интерактивное исследование политики Екатерины II в контексте просвещённого абсолютизма
 site_author: Сырчин Андрей
 
 docs_dir: docs
@@ -13,20 +13,79 @@ theme:
     - navigation.sections
     - navigation.expand
     - toc.integrate
+    - navigation.indexes
+    - navigation.top
+    - content.tabs
+    - content.code.copy
+    - content.tooltips
   palette:
     - scheme: default
-      primary: teal
-      accent: indigo
+      primary: indigo
+      accent: amber
       toggle:
         icon: material/weather-night
         name: Тёмная тема
 
     - scheme: slate
-      primary: teal
-      accent: indigo
+      primary: indigo
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Светлая тема
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/book-open-variant
+    repo: fontawesome/brands/git-alt
+  favicon: assets/images/favicon.png
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+plugins:
+  - search
+  - tags
+  - awesome-pages
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - footnotes
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.smartsymbols
 
 nav:
   - Главная: index.md
@@ -62,3 +121,28 @@ nav:
 
   - Заключение: conclusion.md
   - Источники: sources.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com
+      name: Twitter
+    - icon: fontawesome/solid/envelope
+      link: mailto:example@example.com
+      name: Email
+
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+  consent:
+    title: Cookie consent
+    description: >-
+      Мы используем файлы cookie для улучшения работы сайта
+
+copyright: |
+  &copy; 2024 Исследовательский проект "Просвещённый абсолютизм Екатерины II". 
+  Все материалы представлены в образовательных целях.
