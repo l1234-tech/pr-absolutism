@@ -2,7 +2,7 @@ on:
   push:
     workflows: build-site
     filter:
-      branches: main
+      branches: [main,release]
 
 workflows:
   build-site:
