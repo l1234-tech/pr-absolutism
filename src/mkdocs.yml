@@ -18,6 +18,10 @@ theme:
     - content.tabs
     - content.code.copy
     - content.tooltips
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.footer
   palette:
     - scheme: default
       primary: indigo

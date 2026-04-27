@@ -15,7 +15,24 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Обработка загрузки контента
     handleContentLoading();
+    
+    // Применение темы
+    applyThemeSettings();
 });
+
+/**
+ * Применение настроек темы
+ */
+function applyThemeSettings() {
+    // Убедимся, что тема применяется правильно
+    const body = document.body;
+    if (!body.getAttribute('data-md-color-primary')) {
+        body.setAttribute('data-md-color-primary', 'indigo');
+    }
+    if (!body.getAttribute('data-md-color-accent')) {
+        body.setAttribute('data-md-color-accent', 'amber');
+    }
+}
 
 /**
  * Улучшение переходов между страницами
@@ -333,6 +350,15 @@ style.textContent = `
         border-style: solid;
         border-color: var(--md-default-fg-color) transparent transparent transparent;
     }
+    
+    /* Улучшение видимости активных элементов */
+    .md-nav__item--active .md-nav__link {
+        font-weight: 600;
+    }
+    
+    .md-tabs__item--active .md-tabs__link {
+        font-weight: 600;
+    }
 `;
 
 document.head.appendChild(style);
@@ -343,5 +369,6 @@ window.SourceCraftEnhancements = {
     initClickableCards,
     enhanceNavigation,
     addInteractiveEffects,
-    handleContentLoading
+    handleContentLoading,
+    applyThemeSettings
 };
