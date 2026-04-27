@@ -54,5 +54,11 @@ nav:
       - Связь реформ и переворотов: analysis/connection.md
       - Причинно-следственная модель: analysis/model.md
 
+  - Интерактивные материалы:
+      - Хронология эпохи: interactive/timeline.md
+      - Таблица источников: interactive/sources_table.md
+      - Таблица реформ: interactive/reforms_table.md
+      - Причинно-следственные схемы: interactive/causal_schemes.md
+
   - Заключение: conclusion.md
   - Источники: sources.md
