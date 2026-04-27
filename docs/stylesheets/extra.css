@@ -1,0 +1,246 @@
+/* Кастомные стили для улучшения дизайна и переходов */
+
+/* Плавные переходы для всех элементов */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Улучшение навигационных вкладок */
+.md-tabs__link {
+    position: relative;
+    overflow: hidden;
+}
+
+.md-tabs__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    transition: width 0.3s ease;
+}
+
+.md-tabs__link:hover::after,
+.md-tabs__item--active .md-tabs__link::after {
+    width: 100%;
+}
+
+/* Кликабельные блоки на главной странице */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.home-card {
+    background: var(--md-default-bg-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--md-default-fg-color--lightest);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.home-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.home-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-color: var(--md-primary-fg-color);
+}
+
+.home-card:hover::before {
+    transform: scaleX(1);
+}
+
+.home-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--md-primary-fg-color);
+}
+
+.home-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--md-default-fg-color);
+}
+
+.home-card-description {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Анимация появления контента */
+.md-content {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Улучшение кнопок */
+.md-button {
+    border-radius: 8px;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.md-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1, 1) translate(-50%);
+    transform-origin: 50% 50%;
+}
+
+.md-button:focus:not(:active)::after {
+    animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(20, 20);
+        opacity: 0;
+    }
+}
+
+/* Улучшение боковой навигации */
+.md-nav__link {
+    border-radius: 6px;
+    margin: 2px 0;
+}
+
+.md-nav__link:hover {
+    background-color: var(--md-primary-fg-color--transparent);
+}
+
+.md-nav__item--active .md-nav__link {
+    background-color: var(--md-primary-fg-color--light);
+    color: var(--md-primary-bg-color);
+}
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Эффект параллакса для заголовков */
+.md-typeset h1 {
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.md-typeset h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    border-radius: 2px;
+}
+
+/* Градиентные акценты */
+.gradient-text {
+    background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 76.1875em) {
+    .home-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .home-card {
+        padding: 1rem;
+    }
+}
+
+/* Эффект свечения для активных элементов */
+:focus {
+    outline: 2px solid var(--md-primary-fg-color);
+    outline-offset: 2px;
+}
+
+/* Улучшение таблиц */
+.md-typeset table:not([class]) {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset table:not([class]) th {
+    background: linear-gradient(90deg, var(--md-primary-fg-color), var(--md-primary-fg-color--light));
+    color: white;
+}
+
+/* Кастомные стили для блоков кода */
+.md-typeset code {
+    border-radius: 4px;
+    padding: 0.2em 0.4em;
+    background: var(--md-code-bg-color);
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Анимация загрузки */
+.loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid var(--md-default-fg-color--lightest);
+    border-top-color: var(--md-primary-fg-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
