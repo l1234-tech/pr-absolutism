@@ -38,6 +38,43 @@
 
 </div>
 
+<!-- Улучшенные кликабельные блоки для быстрой навигации -->
+<div class="home-grid animate-on-scroll">
+
+<a href="coups/index.md" class="home-card" data-tooltip="Изучить эпоху дворцовых переворотов">
+    <div class="home-card-icon">👑</div>
+    <div class="home-card-title">Эпоха дворцовых переворотов</div>
+    <div class="home-card-description">
+        Анализ системного кризиса власти после смерти Петра I. Изучение причин политической нестабильности 1725-1762 гг.
+    </div>
+</a>
+
+<a href="enlightenment/index.md" class="home-card" data-tooltip="Изучить теорию просвещённого абсолютизма">
+    <div class="home-card-icon">💡</div>
+    <div class="home-card-title">Просвещённый абсолютизм</div>
+    <div class="home-card-description">
+        Теория и практика модели власти, сочетающей идеи Просвещения с абсолютной монархией.
+    </div>
+</a>
+
+<a href="catherine/index.md" class="home-card" data-tooltip="Изучить политику Екатерины II">
+    <div class="home-card-icon">👸</div>
+    <div class="home-card-title">Политика Екатерины II</div>
+    <div class="home-card-description">
+        Реформы, идеология и противоречия правления императрицы. Анализ связи с предшествующей эпохой.
+    </div>
+</a>
+
+<a href="analysis/index.md" class="home-card" data-tooltip="Смотреть аналитику и выводы">
+    <div class="home-card-icon">📊</div>
+    <div class="home-card-title">Аналитика и выводы</div>
+    <div class="home-card-description">
+        Причинно-следственные связи, системный анализ, исторические закономерности.
+    </div>
+</a>
+
+</div>
+
 ## :material-star: Ключевые темы исследования
 
 === "Системный кризис власти"
@@ -87,7 +124,7 @@ flowchart TD
     H --> I[Просвещённый абсолютизм]
     I --> J[Екатерина II<br/>1762-1796]
     J --> K[Реформы как ответ<br/>на кризисы]
-    K --> L[Укрепление власти при<br/>сохранении противоречий]
+    K --> L[Укрепление власти при<br/>сохранение противоречий]
     
     style A fill:#e1f5fe
     style D fill:#ffebee
