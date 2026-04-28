@@ -49,6 +49,8 @@ extra_css:
 
 extra_javascript:
   - javascripts/extra.js
+  - https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js
+  - javascripts/mermaid-zoom.js 
 
 plugins:
   - search
@@ -149,5 +151,4 @@ extra:
       Мы используем файлы cookie для улучшения работы сайта
 
 copyright: |
-  &copy; 2026 Исследовательский проект "Просвещённый абсолютизм Екатерины II". 
-  Все материалы представлены в образовательных целях.
+  &copy; 2026 Индивидуальный проект "Просвещённый абсолютизм Екатерины II".

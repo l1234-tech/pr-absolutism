@@ -166,6 +166,34 @@
     }
 }
 
+/* Принудительно делаем текст внутри узлов Mermaid темным */
+div.mermaid .node rect,
+div.mermaid .node circle,
+div.mermaid .node ellipse,
+div.mermaid .node polygon,
+div.mermaid .node path {
+    fill-opacity: 1 !important;
+}
+
+/* Самое важное: переопределяем цвет текста внутри узлов */
+div.mermaid .node .label {
+    color: #000000 !important;
+    font-weight: 500;
+    line-height: 1.4; /* Улучшает читаемость многострочного текста */
+}
+
+/* Увеличиваем отступы внутри блоков, чтобы текст не прилипал к краям */
+div.mermaid .node rect {
+    rx: 5 !important; /* Скругление углов */
+    ry: 5 !important;
+}
+
+/* Делаем контейнер меридиана прокручиваемым, если схема широкая */
+div.mermaid {
+    text-align: center;
+    overflow-x: auto;
+    padding: 20px 0;
+}
 /* Улучшение боковой навигации */
 .md-nav__link {
     border-radius: 6px;

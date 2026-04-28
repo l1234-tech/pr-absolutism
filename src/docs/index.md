@@ -75,38 +75,35 @@
         [:octicons-arrow-right-24: Смотреть реформы](catherine/reforms.md)
 
 ## :material-timeline: Причинно-следственная схема
+
 ```mermaid
-flowchart TD
-A[Петровские реформы] --> B[Персонализация власти]
-B --> C[Кризис престолонаследия<br/>Устав 1722 г.]
-C --> D[Дворцовые перевороты<br/>1725-1762]
-D --> E[Борьба элит +<br/>политизация гвардии]
-E --> F[Кризис легитимности<br/>самодержавия]
-F --> G[Запрос общества<br/>на стабильность]
-G --> H[Поиск новой<br/>идеологической модели]
-H --> I[Просвещённый абсолютизм]
-I --> J[Екатерина II<br/>1762-1796]
-J --> K[Реформы как ответ<br/>на кризисы]
-K --> L[Укрепление власти при<br/>сохранении противоречий]
+sequenceDiagram
+    autonumber
+    participant A as Петровские<br/>реформы
+    participant B as Персонализация<br/>власти
+    participant C as Кризис<br/>престолонаследия
+    participant D as Дворцовые<br/>перевороты
+    participant E as Борьба элит и<br/>гвардии
+    participant F as Кризис<br/>легитимности
+    participant G as Запрос на<br/>стабильность
+    participant H as Поиск новой<br/>модели
+    participant I as Просвещённый<br/>абсолютизм
+    participant J as Екатерина II
+    participant K as Реформы и<br/>противоречия
+
+    A->>B: Реформы
+    B->>C: Устав 1722 г.
+    C->>D: Эпоха 1725-1762
+    D->>E: Политизация
+    E->>F: Кризис власти
+    F->>G: Требование стабильности
+    G->>H: Поиск идеологии
+    H->>I: Новая модель
+    I->>J: Правление 1762-1796
+    J->>K: Итоги эпохи
     
-style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000000
-style B fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-style C fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-style D fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
-style E fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-style F fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-style G fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-style H fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-style I fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
-style J fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000000
-style K fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-style L fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
-
-%% Стили для стрелок, чтобы их было видно на темном фоне
-linkStyle default stroke:#546e7a,stroke-width:2px;
+    note right of K: Укрепление власти при<br/>сохранении противоречий
 ```
-
-[:material-download: Скачать схему в PDF](#){ .md-button .md-button--primary }
 
 ## Интерактивные материалы
 
@@ -155,7 +152,7 @@ linkStyle default stroke:#546e7a,stroke-width:2px;
 3.  **Определение предпосылок** формирования политики Екатерины II
 4.  **Создание чернового варианта** сайта с отобранной информацией
 
-    [:octicons-arrow-right-24: Результаты этапа 1](introduction.md#этап-1-1003---сбор-и-первичный-анализ-материала){ .md-button .md-button--secondary }
+    [:octicons-arrow-right-24: Результаты этапа 1](conclusion.md#этап-1-1003---сбор-и-первичный-анализ-материала){ .md-button .md-button--secondary }
 
 ### Этап 2: Углублённый анализ (01.04)
 
@@ -164,7 +161,7 @@ linkStyle default stroke:#546e7a,stroke-width:2px;
 3.  **Изучение внутренней и внешней политики** императрицы
 4.  **Доработка и структурирование** материалов для сайта
 
-    [:octicons-arrow-right-24: Результаты этапа 2](introduction.md#этап-2-0104---углублённый-анализ-политики-екатерины-ii){ .md-button .md-button--secondary }
+    [:octicons-arrow-right-24: Результаты этапа 2](conclusion.md#этап-2-0104---углублённый-анализ-политики-екатерины-ii){ .md-button .md-button--secondary }
 
 ## :material-eye: Визуальная галерея
 
