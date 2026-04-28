@@ -10,36 +10,34 @@
 
 *Примечание: Для добавления портретов поместите изображения в папку `/src/docs/media/images/` согласно инструкциям в файле README.md*
 
-<!-- 
-Пример использования изображений (раскомментируйте после добавления файлов):
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
   <figure style="flex: 1 1 200px;">
-    <img src="../media/images/ekaterina_I.jpg" alt="Портрет императрицы Екатерины I" style="width: 100%; height: auto;">
+    <img src="../assets/images/ekaterina_1.jpg" alt="Портрет императрицы Екатерины I" style="width: 100%; height: auto;">
     <figcaption>Екатерина I (1725-1727)</figcaption>
   </figure>
   <figure style="flex: 1 1 200px;">
-    <img src="../media/images/peter_II.jpg" alt="Портрет императора Петра II" style="width: 100%; height: auto;">
+    <img src="../assets/images/petr_2.jpg" alt="Портрет императора Петра II" style="width: 100%; height: auto;">
     <figcaption>Пётр II (1727-1730)</figcaption>
   </figure>
   <figure style="flex: 1 1 200px;">
-    <img src="../media/images/anna_ioannovna.jpg" alt="Портрет императрицы Анны Иоанновны" style="width: 100%; height: auto;">
+    <img src="../assets/images/anna_ioanovna.jpg" alt="Портрет императрицы Анны Иоанновны" style="width: 100%; height: auto;">
     <figcaption>Анна Иоанновна (1730-1740)</figcaption>
   </figure>
   <figure style="flex: 1 1 200px;">
-    <img src="../media/images/ivan_VI.jpg" alt="Портрет императора Ивана VI" style="width: 100%; height: auto;">
-    <figcaption>Иван VI (1740-1741)</figcaption>
-  </figure>
-  <figure style="flex: 1 1 200px;">
-    <img src="../media/images/elizaveta_petrovna.jpg" alt="Портрет императрицы Елизаветы Петровны" style="width: 100%; height: auto;">
+    <img src="../assets/images/elizaveta_petrovna.jpg" alt="Портрет императрицы Елизаветы Петровны" style="width: 100%; height: auto;">
     <figcaption>Елизавета Петровна (1741-1761)</figcaption>
   </figure>
   <figure style="flex: 1 1 200px;">
-    <img src="../media/images/peter_III.jpg" alt="Портрет императора Петра III" style="width: 100%; height: auto;">
+    <img src="../assets/images/ivan_6.jpg" alt="Портрет императора Ивана VI" style="width: 50%; height: auto;">
+    <figcaption>Иван VI (1740-1741)</figcaption>
+  </figure>
+  <figure style="flex: 1 1 200px;">
+    <img src="../assets/images/petr_3.jpg" alt="Портрет императора Петра III" style="width: 50%; height: auto;">
     <figcaption>Пётр III (1761-1762)</figcaption>
   </figure>
 </div>
--->
+
 
 ### Хронология ключевых событий
 

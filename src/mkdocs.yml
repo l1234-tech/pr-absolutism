@@ -54,6 +54,7 @@ plugins:
   - search
   - tags
   - awesome-pages
+  - mermaid2
 
 markdown_extensions:
   - pymdownx.highlight:

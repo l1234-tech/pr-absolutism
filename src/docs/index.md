@@ -2,46 +2,10 @@
 
 ## От дворцовых переворотов к стабильности
 
-<div class="grid cards" markdown>
-
--   :material-history: __Эпоха дворцовых переворотов__
-
-    ---
-
-    Анализ системного кризиса власти после смерти Петра I. Изучение причин политической нестабильности 1725-1762 гг.
-
-    [:octicons-arrow-right-24: Перейти к разделу](coups/index.md)
-
--   :material-lightbulb: __Просвещённый абсолютизм__
-
-    ---
-
-    Теория и практика модели власти, сочетающей идеи Просвещения с абсолютной монархией.
-
-    [:octicons-arrow-right-24: Изучить теорию](enlightenment/index.md)
-
--   :material-crown: __Политика Екатерины II__
-
-    ---
-
-    Реформы, идеология и противоречия правления императрицы. Анализ связи с предшествующей эпохой.
-
-    [:octicons-arrow-right-24: Изучить реформы](catherine/index.md)
-
--   :material-chart-line: __Аналитика и выводы__
-
-    ---
-
-    Причинно-следственные связи, системный анализ, исторические закономерности.
-
-    [:octicons-arrow-right-24: Смотреть анализ](analysis/index.md)
-
-</div>
-
 <!-- Улучшенные кликабельные блоки для быстрой навигации -->
 <div class="home-grid animate-on-scroll">
 
-<a href="coups/index.md" class="home-card" data-tooltip="Изучить эпоху дворцовых переворотов">
+<a href="coups/" class="home-card" data-tooltip="Изучить эпоху дворцовых переворотов">
     <div class="home-card-icon">👑</div>
     <div class="home-card-title">Эпоха дворцовых переворотов</div>
     <div class="home-card-description">
@@ -49,7 +13,7 @@
     </div>
 </a>
 
-<a href="enlightenment/index.md" class="home-card" data-tooltip="Изучить теорию просвещённого абсолютизма">
+<a href="enlightenment/" class="home-card" data-tooltip="Изучить теорию просвещённого абсолютизма">
     <div class="home-card-icon">💡</div>
     <div class="home-card-title">Просвещённый абсолютизм</div>
     <div class="home-card-description">
@@ -57,7 +21,7 @@
     </div>
 </a>
 
-<a href="catherine/index.md" class="home-card" data-tooltip="Изучить политику Екатерины II">
+<a href="catherine/" class="home-card" data-tooltip="Изучить политику Екатерины II">
     <div class="home-card-icon">👸</div>
     <div class="home-card-title">Политика Екатерины II</div>
     <div class="home-card-description">
@@ -65,7 +29,7 @@
     </div>
 </a>
 
-<a href="analysis/index.md" class="home-card" data-tooltip="Смотреть аналитику и выводы">
+<a href="analysis/" class="home-card" data-tooltip="Смотреть аналитику и выводы">
     <div class="home-card-icon">📊</div>
     <div class="home-card-title">Аналитика и выводы</div>
     <div class="home-card-description">
@@ -111,31 +75,40 @@
         [:octicons-arrow-right-24: Смотреть реформы](catherine/reforms.md)
 
 ## :material-timeline: Причинно-следственная схема
-
 ```mermaid
 flowchart TD
-    A[Петровские реформы] --> B[Персонализация власти]
-    B --> C[Кризис престолонаследия<br/>Устав 1722 г.]
-    C --> D[Дворцовые перевороты<br/>1725-1762]
-    D --> E[Борьба элит +<br/>политизация гвардии]
-    E --> F[Кризис легитимности<br/>самодержавия]
-    F --> G[Запрос общества<br/>на стабильность]
-    G --> H[Поиск новой<br/>идеологической модели]
-    H --> I[Просвещённый абсолютизм]
-    I --> J[Екатерина II<br/>1762-1796]
-    J --> K[Реформы как ответ<br/>на кризисы]
-    K --> L[Укрепление власти при<br/>сохранение противоречий]
+A[Петровские реформы] --> B[Персонализация власти]
+B --> C[Кризис престолонаследия<br/>Устав 1722 г.]
+C --> D[Дворцовые перевороты<br/>1725-1762]
+D --> E[Борьба элит +<br/>политизация гвардии]
+E --> F[Кризис легитимности<br/>самодержавия]
+F --> G[Запрос общества<br/>на стабильность]
+G --> H[Поиск новой<br/>идеологической модели]
+H --> I[Просвещённый абсолютизм]
+I --> J[Екатерина II<br/>1762-1796]
+J --> K[Реформы как ответ<br/>на кризисы]
+K --> L[Укрепление власти при<br/>сохранении противоречий]
     
-    style A fill:#e1f5fe
-    style D fill:#ffebee
-    style I fill:#e8f5e8
-    style J fill:#f3e5f5
-    style L fill:#fff3e0
+style A fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000000
+style B fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+style C fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+style D fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
+style E fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+style F fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+style G fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+style H fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+style I fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
+style J fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000000
+style K fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+style L fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
+
+%% Стили для стрелок, чтобы их было видно на темном фоне
+linkStyle default stroke:#546e7a,stroke-width:2px;
 ```
 
 [:material-download: Скачать схему в PDF](#){ .md-button .md-button--primary }
 
-## :material-interaction: Интерактивные материалы
+## Интерактивные материалы
 
 <div class="grid cards" markdown>
 
@@ -206,7 +179,7 @@ flowchart TD
     
         Образ монарха, заботящегося о подданных. Роскошные наряды подчеркивают статус императрицы.
     
-        [:octicons-image-24: Смотреть портрет](coups/index.md#галерея-портретов-императоров-эпохи)
+        [:octicons-image-24: Смотреть портрет](coups/index.md)
     
     -   __Анна Иоанновна__ (1730-1740)
     
@@ -234,7 +207,7 @@ flowchart TD
     
     </div>
 
-    [:octicons-gallery-24: Открыть полную галерею](coups/index.md#галерея-портретов-императоров-эпохи){ .md-button }
+    [:octicons-image-24: Открыть полную галерею](coups/index.md#галерея-портретов-императоров-эпохи){ .md-button }
 
 ## :material-help: Быстрый старт
 
@@ -247,14 +220,6 @@ flowchart TD
     Начните с **[Введения](introduction.md)**, чтобы понять цели и задачи исследования, затем перейдите к **[Эпохе дворцовых переворотов](coups/index.md)**.
 
     [:octicons-rocket-24: Начать изучение](introduction.md){ .md-button .md-button--primary }
-
--   __Исследователям__
-
-    ---
-
-    Изучите **[Аналитику](analysis/index.md)** для понимания системных связей, затем углубитесь в **[Интерактивные материалы](interactive/timeline.md)**.
-
-    [:octicons-search-24: К аналитике](analysis/index.md){ .md-button }
 
 -   __Преподавателям__
 
@@ -271,22 +236,11 @@ flowchart TD
 !!! abstract "Методологическая основа"
     Исследование построено на **комплексном анализе** исторических источников с использованием:
     
-    - **Историко-генетического метода** для выявления причинно-следственных связей
+    - Выявлением **причинно-следственных связей**
     - **Сравнительно-исторического метода** для анализа европейского и российского опыта
-    - **Системного подхода** для изучения политической системы как целостности
+    - **Системного подхода** для изучения политической системы
     - **Контент-анализа** для работы с текстовыми источниками
-
-!!! success "Научная новизна"
-    Проект представляет **инновационный подход** к изучению политики Екатерины II через призму связи с эпохой дворцовых переворотов, сочетая традиционные исторические методы с современными технологиями презентации.
 
 [:octicons-info-24: Подробнее о методологии](introduction.md#методологическая-основа){ .md-button }
 
 ---
-
-<div align="center">
-
-*Проект завершён в соответствии с планами этапов 1 и 2. Все материалы структурированы и представлены на интерактивном образовательном ресурсе.*
-
-**Сайт проекта:** [https://absolutism.sourcecraft.site/pr-absolutism/](https://absolutism.sourcecraft.site/pr-absolutism/)
-
-</div>
